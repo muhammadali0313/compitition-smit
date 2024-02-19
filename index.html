@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container box_1620">
+            <a class="navbar-brand logo_h" href="#"
+              ><img src="./images/sel.png" alt="images"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse offset navbar d-flex "
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav ml-auto nav-item">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Properties</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Pages</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Elements</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Blog</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                  <a href="#" class="search"
+                    ><i class="lnr lnr-magnifier"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="home_banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+          <div class="banner_content">
+            <h5>The joy of home owning</h5>
+            <h3>Find Your New Home</h3>
+            <a class="main_btn" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="advanced_search">
+          <h3>Search Properties for</h3>
+          <div class="search_select">
+            <select class="s_select">
+              <option value="1">Choose Locations</option>
+              <option value="2">Property Type</option>
+              <option value="4">Bedrooms</option>
+            </select>
+            <select class="s_select">
+              <option value="1">Property Type</option>
+              <option value="2">Choose Locations</option>
+              <option value="4">Bedrooms</option>
+            </select>
+            <select class="s_select">
+              <option value="1">Bedrooms</option>
+              <option value="2">Property Type</option>
+              <option value="4">Choose Locations</option>
+            </select>
+            <select class="s_select">
+              <option value="1">Bathrooms</option>
+              <option value="2">Property Type</option>
+              <option value="4">Bedrooms</option>
+            </select>
+          </div>
+          <div class="search_range">
+            <div class="range_item">
+              <h5>Price Range</h5>
+              <div id="slider-range"></div>
+              <span class="d_text">$200</span>
+              <input
+                type="text"
+                id="amount"
+                readonly
+                style="border: 0"
+                class="amount"
+              />
+            </div>
+            <div class="range_item">
+              <h5>property Area</h5>
+              <div id="slider-range2"></div>
+              <span class="d_text2">50sqm</span>
+              <input
+                type="text"
+                id="amount2"
+                readonly
+                style="border: 0"
+                class="amount2"
+              />
+            </div>
+          </div>
+          <button type="submit" value="submit" class="btn submit_btn">
+            Search Property
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome_area p_120">
+      <div class="container">
+        <div class="row welcome_inner">
+          <div class="col-lg-6">
+            <div class="welcome_img">
+              <img class="img-fluid" src="./images/clc center.png" alt />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="welcome_text">
+              <h4>Welcome to SEL Center</h4>
+              <p>
+                inappropriate behavior is often laughed off as “boys will be
+                boys,” women face higher conduct standards especially in the
+                workplace. That’s why it’s crucial that, as women, our behavior
+                on the job is beyond reproach. inappropriate behavior is often
+                laughed.
+              </p>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="wel_item">
+                    <i class="lnr lnr-database"></i>
+                    <h4>$2.5M</h4>
+                    <p>Total Donation</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="wel_item">
+                    <i class="lnr lnr-book"></i>
+                    <h4>1465</h4>
+                    <p>Total Projects</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="wel_item">
+                    <i class="lnr lnr-users"></i>
+                    <h4>3965</h4>
+                    <p>Total Volunteers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
